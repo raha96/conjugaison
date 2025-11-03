@@ -1,0 +1,9 @@
+ - More advanced gamification: save progress locally
+ - Add other tenses (which?)
+ - Enable flashcard-like functions
+ - Enable switching between "Je / J'"
+ - Show "Congrat!" after the last verb
+ - Add themes (CSS & JS)
+ - Set fonts
+ - Fix mobile rotate background shift bug
+ - Set button backgrounds (specially disabled)

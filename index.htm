@@ -1,0 +1,85 @@
+<html>
+    <!-- V alpha3 -->
+    <meta charset="utf-8"/>
+    <head>
+        <title>Les Exercises de la Conjugaison</title>
+        <Script src="scripts/verbclass.js"></Script>
+        <Script src="scripts/rootlist.js"></Script>
+        <script src="scripts/script.js"></script>
+        <link rel="stylesheet" href="styles/style.css" />
+        <link rel="icon" href="favicon.ico" />
+		<link rel="manifest" href="manifest.json" />
+		<link rel="apple-touch-icon" href="images/icon512_apple.png" />
+        <meta name="viewport" content="width=device-width, height=100%, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    </head>
+    <!-- TODO: les dictations! -->
+    <body onload="init();loadRandom();">
+        <div class="parent">
+            <div class="h1" id="infinitif">aimer</div>
+            <div class="h2">Indicatif Présent</div>
+            <div id="present" class="superbox">
+                <div class="box">
+                    <div id="premiere_singuliar" class="subbox">
+                        <div class="subbox_container">
+                            <div class="titre" id="titre_1s">Je </div>
+                            <div class="reponse" id="reponse_1s">
+                                <input class="reponse_in" id="text_1s" />
+                            </div>
+                        </div>
+                    </div>
+                    <div id="deuxieme_singulier" class="subbox">
+                        <div class="subbox_container">
+                            <div class="titre" id="titre_2s">Tu </div>
+                            <div class="reponse" id="reponse_2s">
+                                <input class="reponse_in" id="text_2s" />
+                            </div>
+                        </div>
+                    </div>
+                    <div id="troisieme_singulier" class="subbox">
+                        <div class="subbox_container">
+                            <div class="titre" id="titre_3s">Il / Elle <br />On </div>
+                            <div class="reponse" id="reponse_3s">
+                                <input class="reponse_in" id="text_3s" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div id="premiere_pluriel" class="subbox">
+                        <div class="subbox_container">
+                            <div class="titre titrelong" id="titre_1p">Nous </div>
+                            <div class="reponse" id="reponse_1p">
+                                <input class="reponse_in" id="text_1p" />
+                            </div>
+                        </div>
+                    </div>
+                    <div id="deuxieme_pluriel" class="subbox">
+                        <div class="subbox_container">
+                            <div class="titre titrelong" id="titre_2p">Vous </div>
+                            <div class="reponse" id="reponse_2p">
+                                <input class="reponse_in" id="text_2p" />
+                            </div>
+                        </div>
+                    </div>
+                    <div id="trousieme_pluriel" class="subbox">
+                        <div class="subbox_container">
+                            <div class="titre titrelong" id="titre_3p">Ils<br />Elles </div>
+                            <div class="reponse" id="reponse_3p">
+                                <input class="reponse_in" id="text_3p" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="h2" style="margin-left: 2em;">
+                <input class="button bleft" type="button" onclick="checkPresent()" disabled=false id="verifie" value="Vérifie" /><input class="button bmid" type="button" onclick="showNext()" disabled=false id="suivante" value="Suivante" /><input class="button bright" type="button" onclick="showPresent()" value="Solution" />
+            </div>
+            <div class="h2">
+                <div class="subbox_container" style="display: inline-block; padding: 0.5em 1em 0.5em 1em;">
+                    Score:&nbsp;
+                    <span id="score">0</span>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
